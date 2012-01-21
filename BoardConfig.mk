@@ -92,3 +92,6 @@ BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_BOOTLOADER := true
+
+# At this time, all Xoom recoveries assume device is stingray
+TARGET_OTA_ASSERT_DEVICE := wingray,stingray
