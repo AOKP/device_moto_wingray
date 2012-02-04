@@ -238,5 +238,7 @@
          prevents us from lowering this to the preferred value without
          causing scroll startup to jump. -->
     <dimen name="config_viewConfigurationTouchSlop">12dp</dimen>
+    
+    <bool name="config_enableCrtAnimations">false</bool>
 
 </resources>

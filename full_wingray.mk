@@ -35,8 +35,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/moto/wingray/device.mk)
 
+$(call inherit-product, vendor/aokp/products/common_tablet.mk)
+
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_wingray
+PRODUCT_NAME := aokp_wingray
+PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := wingray
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Wingray
+PRODUCT_MODEL := Xoom
+PRODUCT_MANUFACTURER := Motorola
+
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=tervigon BUILD_ID=IML77 BUILD_FINGERPRINT=motorola/tervigon/wingray:4.0.3/IML77/239789:user/release-keys PRIVATE_BUILD_DESC="tervigon-user 4.0.3 IML77 239789 release-keys" BUILD_NUMBER=239789
+
+# Inherit common build.prop overrides
+-include vendor/aokp/products/common_versions.mk
+
+# Copy maguro specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
