@@ -13,11 +13,3 @@
 # limitations under the License.
 
 LOCAL_PATH := $(my-dir)
-
-ifeq ($(TARGET_DEVICE),wingray)
-
-ifneq ($(TARGET_SIMULATOR),true)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
-
-endif
