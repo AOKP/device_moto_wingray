@@ -90,6 +90,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 NEED_WORKAROUND_CORTEX_A9_745320 := true
 BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
 
+# kernel
+TARGET_PREBUILT_KERNEL := device/moto/wingray/kernel
+
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_BOOTLOADER := true
 
