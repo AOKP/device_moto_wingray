@@ -10,3 +10,11 @@ ro.telephony.default_network=4
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
 ro.opengles.version = 131072
+
+# hardware info
+ro.device.cpu=1GHz NVIDIA Tegra 2 250 T20
+ro.device.gpu=NVIDIA ULP GeForce
+ro.device.rear_cam=5 MP
+ro.device.front_cam=1.9 MP
+ro.device.screen_res=1280x800
+
